@@ -40,20 +40,20 @@
 ### Proxmox Initial Setup
 1. Accessed Proxmox web interface at https://[Proxmox-IP]:8006
 2. Created non-root user account with administrative privileges:
-   ```
-   # apt install sudo
-   # useradd -mU -G sudo -s /bin/bash failsafe
-   # passwd failsafe
+   ```bash
+   apt install sudo
+   useradd -mU -G sudo -s /bin/bash failsafe
+   passwd failsafe
    ```
 3. Modified repositories to use non-subscription sources:
    ```
-   # vi /etc/apt/sources.list.d/pve-enterprise.list
-   # vi /etc/apt/sources.list.d/ceph.list
+   vi /etc/apt/sources.list.d/pve-enterprise.list
+   vi /etc/apt/sources.list.d/ceph.list
    ```
 4. Applied system updates:
    ```
-   # apt update
-   # apt dist-upgrade
+   apt update
+   apt dist-upgrade
    ```
 
 ### Custom Network Configuration
