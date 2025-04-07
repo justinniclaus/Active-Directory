@@ -61,7 +61,7 @@ I had to create a custom network configuration to solve connectivity issues with
 
 1. Created a secondary bridge interface (vmbr1) for NAT:
    ```
-   # vi /etc/network/interfaces
+   vim /etc/network/interfaces
    
    auto vmbr1
    iface vmbr1 inet static
