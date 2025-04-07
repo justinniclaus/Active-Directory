@@ -222,21 +222,21 @@ I had to create a custom network configuration to solve connectivity issues with
 ## Implementation Challenges and Solutions
 
 ### Network Connectivity Issues
-1. **Problem**: Initially couldn't get external network connectivity using just vmbr0
-   **Solution**: Created a NAT network (vmbr1) connected to vmbr0 to provide internet access
+**Problem**: Initially couldn't get external network connectivity using just vmbr0
+**Solution**: Created a NAT network (vmbr1) connected to vmbr0 to provide internet access
 
-2. **Problem**: OPNsense WAN interface couldn't reach the internet
-   **Solution**: Connected OPNsense WAN to vmbr1 NAT network instead of vmbr0
+**Problem**: OPNsense WAN interface couldn't reach the internet
+**Solution**: Connected OPNsense WAN to vmbr1 NAT network instead of vmbr0
 
-3. **Problem**: DNS resolution issues between networks
-   **Solution**: Modified DNS forwarding in OPNsense to use upstream DNS servers
+**Problem**: DNS resolution issues between networks
+**Solution**: Modified DNS forwarding in OPNsense to use upstream DNS servers
 
 ### Virtualization Challenges
-1. **Problem**: Performance issues with nested virtualization
-   **Solution**: Reduced VM memory allocation and optimized CPU settings
+**Problem**: Performance issues with nested virtualization
+**Solution**: Reduced VM memory allocation and optimized CPU settings
 
-2. **Problem**: VirtIO drivers not detected properly
-   **Solution**: Mounted ISO properly and manually navigated to correct driver folders based on OS version
+**Problem**: VirtIO drivers not detected properly
+**Solution**: Mounted ISO properly and manually navigated to correct driver folders based on OS version
 
 ## Verification and Testing
 
