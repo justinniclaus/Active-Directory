@@ -51,9 +51,6 @@ This repository documents my implementation of the Active Directory lab assignme
 - Containerization with LXC/Docker
 - Virtualization with Proxmox
 
-## Academic Context
-This lab was completed as part of CS 596: Applied Computer Security coursework. The lab requirements and specifications were provided by the course instructor. This repository documents my personal implementation and learning experience.
-
 ## Tools and Technologies
 - **Hypervisor**: Proxmox VE 8.3
 - **Firewall**: OPNsense 24.7
